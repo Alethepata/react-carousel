@@ -6,12 +6,12 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 function Carousel() {
     const [count, countState] = useState(0);
 
-    setInterval(myTimer, 4000);
+    // setInterval(myTimer, 4000);
 
-    function myTimer() {
-        countState(count + 1)
-        if (count == store.length - 1) countState(0)
-    }
+    // function myTimer() {
+    //     countState(count + 1)
+    //     if (count == store.length - 1) countState(0)
+    // }
 
     return (
         <div className="carousel-container">
