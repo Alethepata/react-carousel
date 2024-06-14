@@ -10,7 +10,10 @@ function Carousel() {
                 store.map((element, index) => (
                     count == index && 
                     <div key={`image_${index}`} className="image_container">
-                        <img src={element.image} alt="" />
+                            <img src={element.image} alt="" />
+                            <div className="container_text">
+                                <h1>{ element.title }</h1>
+                            </div>
                     </div>
                 ))
             }
