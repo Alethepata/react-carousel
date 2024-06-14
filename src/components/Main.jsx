@@ -1,9 +1,9 @@
-import Caurosel from './partials/Caurosel';
+import Carousel from './partials/Carousel';
 
 function Main() {
     return (
         <main>
-            <Caurosel/>
+            <Carousel/>
         </main>
     )
 }

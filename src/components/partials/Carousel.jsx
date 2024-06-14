@@ -1,10 +1,10 @@
 import { store } from '../../db/store';
 import { useState } from 'react';
 
-function Caurosel() {
+function Carousel() {
     const [count, countState] = useState(0)
     return (
-        <div className="caurosel">
+        <div className="carousel">
             <button onClick={() => countState(count  != 0 ? count - 1 : store.length - 1 )}>-</button>
             {
                 store.map((element, index) => (
@@ -18,4 +18,4 @@ function Caurosel() {
         </div>
     )
 }
-export default Caurosel
+export default Carousel
